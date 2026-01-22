@@ -1,0 +1,65 @@
+/* ===== Navigation ===== */
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:1.2rem;
+  font-size:0.85rem;
+}
+
+.nav-wrapper{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  flex:1;
+  justify-content:center;
+}
+
+/* ===== Hamburger Menu ===== */
+.menu-toggle{
+  display:none;
+  border:none;
+  background:none;
+  color:var(--text-main);
+  cursor:pointer;
+  padding:0.25rem;
+}
+
+.menu-toggle span{
+  display:block;
+  width:20px;
+  height:2px;
+  margin:4px 0;
+  background:var(--text-main);
+  transition:transform 0.2s, opacity 0.2s;
+}
+
+.menu-toggle.active span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+.menu-toggle.active span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+
+.logout-btn {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-family: 'DotGothic16', sans-serif;
+  background: transparent;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.logout-btn:hover {
+  background: #ff4d4d;
+  color: #000;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+}
